@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for Business Collections app for Meta Business Suite. Learn how we handle, collect, and protect your data.">
+    <title>Privacy Policy - Business Collections</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0666EB;
+            --primary-hover: #0053C7;
+            --bg-gradient: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --card-border: rgba(255, 255, 255, 0.1);
+            --text-main: #F8FAFC;
+            --text-muted: #94A3B8;
+            --text-heading: #FFFFFF;
+            --accent-glow: rgba(6, 102, 235, 0.15);
+            --badge-bg: rgba(6, 102, 235, 0.2);
+            --badge-text: #60A5FA;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-gradient);
+            color: var(--text-main);
+            min-height: 100vh;
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 48px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .header {
+            border-bottom: 1px solid var(--card-border);
+            padding-bottom: 32px;
+            margin-bottom: 40px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--badge-bg);
+            color: var(--badge-text);
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-heading);
+            margin-bottom: 12px;
+            letter-spacing: -0.02em;
+        }
+
+        .meta-info {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .toc {
+            background: rgba(15, 23, 42, 0.5);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 40px;
+        }
+
+        .toc-title {
+            font-weight: 600;
+            color: var(--text-heading);
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+
+        .toc ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 10px;
+        }
+
+        .toc a {
+            color: var(--badge-text);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .toc a:hover {
+            color: #93C5FD;
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-heading);
+            margin-bottom: 16px;
+            padding-top: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--text-main);
+            font-size: 1.05rem;
+        }
+
+        ul {
+            margin-left: 24px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        .highlight-box {
+            background: var(--accent-glow);
+            border-left: 4px solid var(--primary);
+            padding: 20px;
+            border-radius: 0 12px 12px 0;
+            margin: 24px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+
+        .contact-card {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 28px;
+            margin-top: 24px;
+        }
+
+        .contact-item {
+            display: flex;
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+
+        .contact-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-label {
+            font-weight: 600;
+            width: 140px;
+            color: var(--text-heading);
+        }
+
+        footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--card-border);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 16px 12px;
+            }
+            .container {
+                padding: 24px 20px;
+                border-radius: 16px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <span class="badge">Meta Business Suite Integration</span>
+            <h1>Privacy Policy</h1>
+            <div class="meta-info">
+                <span><strong>App Name:</strong> Business Collections</span>
+                <span><strong>Effective Date:</strong> August 16, 2026</span>
+                <span><strong>Last Updated:</strong> August 16, 2026</span>
+            </div>
+        </header>
+
+        <nav class="toc">
+            <div class="toc-title">Table of Contents</div>
+            <ul>
+                <li><a href="#overview">1. Overview</a></li>
+                <li><a href="#information-collected">2. Information We Collect</a></li>
+                <li><a href="#meta-permissions">3. Meta API & Permissions Data</a></li>
+                <li><a href="#how-we-use-data">4. How We Use Your Information</a></li>
+                <li><a href="#data-sharing">5. Data Sharing & Third Parties</a></li>
+                <li><a href="#data-security">6. Data Storage & Security</a></li>
+                <li><a href="#data-retention">7. Data Retention & Deletion</a></li>
+                <li><a href="#user-rights">8. Your Rights & Options</a></li>
+                <li><a href="#contact">9. Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <section id="overview">
+            <h2>1. Overview</h2>
+            <p>Welcome to <strong>Business Collections</strong> ("we", "our", or "us"). Business Collections is an application designed to integrate with <strong>Meta Business Suite</strong> to assist businesses in managing customer invoices, collections, payment reminders, catalog integrations, and customer communication workflows.</p>
+            <p>We respect your privacy and are committed to protecting the personal data and business information processed through our application. This Privacy Policy explains how we collect, use, store, share, and protect your information when you connect and use the Business Collections app within Meta Business Suite.</p>
+        </section>
+
+        <section id="information-collected">
+            <h2>2. Information We Collect</h2>
+            <p>Depending on how you configure and use Business Collections, we may collect the following types of information:</p>
+            <ul>
+                <li><strong>Account Information:</strong> Business name, email address, contact details, user ID, and administrative profile details provided during registration or Meta authentication.</li>
+                <li><strong>Meta Business Suite Data:</strong> Connected Business Manager ID, Page IDs, Ad Account IDs, WhatsApp Business Account details, and associated metadata granted via Meta OAuth permissions.</li>
+                <li><strong>Transaction & Collection Data:</strong> Invoices, payment transaction history, outstanding balances, order records, customer contact references (names, phone numbers, email addresses) needed for sending collection reminders.</li>
+                <li><strong>Usage & Technical Data:</strong> IP addresses, browser types, device information, access timestamps, system logs, and error telemetry.</li>
+            </ul>
+        </section>
+
+        <section id="meta-permissions">
+            <h2>3. Meta API & Permissions Data</h2>
+            <p>Business Collections accesses specific data via Meta Graph APIs only after you grant explicit permission through Meta OAuth authorization. These permissions may include:</p>
+            <ul>
+                <li><code>pages_show_list</code> / <code>pages_read_engagement</code>: To view and manage connected Meta Pages.</li>
+                <li><code>business_management</code>: To associate your Meta Business Account with Business Collections.</li>
+                <li><code>whatsapp_business_messaging</code> / <code>pages_messaging</code>: To automate payment reminder messages and collection updates to customers.</li>
+            </ul>
+            <div class="highlight-box">
+                <p><strong>Meta Platform Compliance Guarantee:</strong> Business Collections strictly complies with the Meta Platform Terms and Meta Developer Policies. We will never sell, trade, or misuse data obtained through Meta APIs for unauthorized advertising or profiling.</p>
+            </div>
+        </section>
+
+        <section id="how-we-use-data">
+            <h2>4. How We Use Your Information</h2>
+            <p>We process your data strictly to fulfill the functional features of the Business Collections application:</p>
+            <ul>
+                <li>To synchronize invoice, billing, and collection status with Meta Business Suite channels.</li>
+                <li>To send automated or manual payment reminder messages via Meta messaging channels (WhatsApp/Messenger).</li>
+                <li>To calculate business analytics, outstanding balance reports, and collection progress dashboards.</li>
+                <li>To provide customer support, system updates, and troubleshoot technical issues.</li>
+                <li>To ensure security, prevent fraud, and comply with legal obligations.</li>
+            </ul>
+        </section>
+
+        <section id="data-sharing">
+            <h2>5. Data Sharing & Third Parties</h2>
+            <p>We do not sell your business or customer personal data to third parties. We share information only under the following limited circumstances:</p>
+            <ul>
+                <li><strong>Meta Platforms, Inc.:</strong> Data transmitted through Meta APIs is processed in accordance with Meta's Privacy Policy and Developer Agreements.</li>
+                <li><strong>Trusted Infrastructure Providers:</strong> Secure hosting (e.g., AWS/GCP/Vercel) and database infrastructure providers that assist in app operations under strict confidentiality agreements.</li>
+                <li><strong>Legal Requirements:</strong> If required by court order, law enforcement, or applicable legislation to comply with legal processes.</li>
+            </ul>
+        </section>
+
+        <section id="data-security">
+            <h2>6. Data Storage & Security</h2>
+            <p>We implement industry-standard technical and organizational security measures to protect your information:</p>
+            <ul>
+                <li>Encryption in transit using TLS/HTTPS protocols.</li>
+                <li>Encryption at rest for sensitive access tokens and customer collection data.</li>
+                <li>Strict access controls restricting data access to authorized personnel only.</li>
+                <li>Regular security vulnerability audits and monitoring.</li>
+            </ul>
+        </section>
+
+        <section id="data-retention">
+            <h2>7. Data Retention & User Data Deletion Instructions</h2>
+            <p>We retain your data only for as long as your Business Collections account is active or as necessary to provide service.</p>
+
+            <div class="highlight-box">
+                <p><strong>How to Request Data Deletion (Meta Platform Requirement):</strong></p>
+                <p style="margin-top: 8px;">If you wish to remove <strong>Business Collections</strong> and delete your data from our systems, you can follow these steps:</p>
+                <ol style="margin-left: 20px; margin-top: 8px;">
+                    <li>Log in to your Facebook/Meta account and navigate to <strong>Settings & Privacy &gt; Settings</strong>.</li>
+                    <li>Select <strong>Business Integrations</strong> or <strong>Apps and Websites</strong>.</li>
+                    <li>Locate <strong>Business Collections</strong> and click <strong>Remove</strong>.</li>
+                    <li>Alternatively, send an email to <a href="mailto:support@yourdomain.com" style="color:#60A5FA;">support@yourdomain.com</a> with the subject line <em>"Data Deletion Request"</em> including your Business Account ID.</li>
+                </ol>
+                <p style="margin-top: 8px;">Upon receiving your request, we will permanently purge all stored access tokens, collection records, and profile details within 30 days, except where retention is legally required.</p>
+            </div>
+        </section>
+
+        <section id="user-rights">
+            <h2>8. Your Rights & Options</h2>
+            <p>Depending on your jurisdiction (such as GDPR in Europe or CCPA/CPRA in California), you may have rights regarding your personal data:</p>
+            <ul>
+                <li><strong>Access & Portability:</strong> Request a copy of the personal data we hold about you.</li>
+                <li><strong>Correction:</strong> Request correction of inaccurate or incomplete data.</li>
+                <li><strong>Deletion:</strong> Request erasure of your data as detailed in Section 7.</li>
+                <li><strong>Revocate Permissions:</strong> Disconnect Business Collections from Meta Business Suite at any time via Meta settings.</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>9. Contact Us</h2>
+            <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your data, please contact our privacy compliance team:</p>
+            <div class="contact-card">
+                <div class="contact-item">
+                    <span class="contact-label">App Name:</span>
+                    <span>Business Collections</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Support Email:</span>
+                    <span><a href="mailto:support@yourdomain.com" style="color: var(--badge-text);">support@yourdomain.com</a></span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Company Name:</span>
+                    <span>Your Company Name / Business Entity</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Address:</span>
+                    <span>Your Business Address, City, Country</span>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Business Collections. All rights reserved. Built for integration with Meta Business Suite.</p>
+        </footer>
+    </div>
+</body>
+</html>
